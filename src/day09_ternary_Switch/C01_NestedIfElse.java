@@ -24,6 +24,5 @@ public class C01_NestedIfElse {
             System.out.println("5'e bolunemiyor");
         }
 
-
     }
 }
