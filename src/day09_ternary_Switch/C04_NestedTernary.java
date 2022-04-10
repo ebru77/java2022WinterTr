@@ -9,7 +9,7 @@ public class C04_NestedTernary {
         //negatif ise -100 den buyuk yada kucuk oldugunu belirleyen ternary yaziniz
 
 
-        int sayi = 199;
+        int sayi = -99;
 
         if (sayi >= 0) {
             if (sayi % 2 == 0) {
@@ -25,6 +25,9 @@ public class C04_NestedTernary {
             }
         }
 
-
+        String sonuc = (sayi>0)?
+                (sayi%2==0 ? "pozitif cift sayi" : "pozitif tek sayi"):
+                (sayi<-100 ? "Sayi -100 den kucuk negatif sayi" : "Sayi -100 den buyuk negatif sayi");
+        System.out.println(sonuc);
     }
 }
