@@ -12,7 +12,7 @@ public class C04_IsimGizleme {
         String krediKartino = "1234123412341234";
 
         String yeniIsim = isim.substring(0,1).toUpperCase() + isim.substring(1).replaceAll("\\S","*");
-        String yeniSoyisim = soyisim.substring(0,1).toUpperCase() + soyisim.replaceAll("\\S","*");
+        String yeniSoyisim = soyisim.substring(0,1).toUpperCase() + soyisim.substring(1).replaceAll("\\S","*");
         String yeniKrediKartno = "**** **** **** " + krediKartino.substring(12);
         System.out.println("isim_soyisim :" + yeniIsim + " " + yeniSoyisim);
         System.out.println("kredi kart no : " + yeniKrediKartno);
